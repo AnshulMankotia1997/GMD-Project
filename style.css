@@ -8,10 +8,11 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.7;
+    font-family: Circular;
+    line-height: 2;
     color: var(--color-white);
     background-color: var(--color-bg);
+
   }
   :root{
     --font-black:#000;
@@ -41,6 +42,11 @@ h2{
 }
 h3{
     font-size: 32px;
+    
+}
+a{
+    text-decoration: none;
+    color:var(--font-gray);
 }
 .container{
     width: var(--container-width-lg);
@@ -63,13 +69,59 @@ font-weight: 300;
     line-height: 1.6rem;
     font-weight: 400;
 }
+.p-large{
+    font-size: 40px;
+    color: var(--font-black);
+}
 .section{
     width: 100%;
     color: var(--font-black);
 }
 img{
     width: 100%;
+    height: 100%;
+    display: block;
 }
+.link {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+    font-size: 15px;
+    color: var(--font-black);
+    font-weight:normal;
+  }
+  .link::before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    height: 1px;
+    bottom: 0%;
+    left: -50%;
+    z-index: 1;
+  }
+  .link::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    height: 1px;
+    bottom: 0%;
+    left: 0;
+  }
+  .link-hover:hover .link::before{
+    animation: slideout 0.8s  linear forwards;
+  }
+  @keyframes slideout{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(300%);
+    }
+  }
 /* ---------SECTION1-MESSAGE-BAR--------- */
 .message-bar{
     width: 100%;
@@ -87,4 +139,89 @@ img{
 
 /* ----------SECTION2-OFFER------------- */
 
+.offer{
+    width: 100%;
+}
+.offers-contai.link{
+    width: 100%;
+}
+.header-text{
+    padding:  1rem 0;
+}
+.header-text a , span{
+ font-size: 12px;
+ font-weight: 100;
+}
+.offer-title{
+text-align: center;
+}
+.offer-links-container{
+    margin-top: 2rem;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ padding: 0 23rem;
+}
+.offer-link{
+   width: 205px;
+   height: 280px;
+   text-align: center;
+}
+.offer-image-container{
+    width: 205px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer-image-container img{
+    height:90% ;
+    width:90% ;
+    border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+}
+.offer-link:hover .offer-image-container img{
+   transform: scale(1.1);
+}
+.offer-link .link{
+    width: 100%;
+}
+
 /* ----------//SECTION2-OFFER------------- */
+
+/*-----------SECTION5 DEALS-------------- */
+.deals{
+    width: 100%;
+}
+.deals .header{
+width: 100%;
+text-align: center;
+}
+.article-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+padding: 0 5rem;
+}
+.article-link{
+    height: 28.25rem;
+    width: 20.438rem;
+}
+.article-link h3{
+    font-size: 1.5rem;
+}
+.article-link P{
+    font-size :14px;
+}
+.article-image-container img{
+    transition: all 0.3s ease;
+}
+.article-link:hover .article-image-container img{
+  transform: scale(1.1);
+}
+.article-image-container{
+    height: 20.438rem;
+    width:20.438rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+/*-----------//SECTION5 DEALS-------------- */
