@@ -135,6 +135,7 @@ img {
     padding-bottom: 0.2rem;
     font-size: 14px;
     color: var(--font-gray);
+    cursor: pointer;
 }
 
 .link::before {
@@ -160,7 +161,7 @@ img {
     left: 0;
 }
 
-.link:hover .link::before {
+.link:hover::before {
     animation: slideout 0.8s linear forwards;
 }
 
@@ -211,7 +212,11 @@ img {
     padding: 1rem 2rem;
 }
 
-.header-text a, span {
+.header-text a {
+    font-size: 12px;
+    font-weight: 100;
+}
+.header-text span{
     font-size: 12px;
     font-weight: 100;
 }
@@ -394,3 +399,115 @@ img {
 }
 
 /*-----------//SECTION5 DEALS-------------- */
+
+/* ------------SECTION8 SALE----------------*/
+.section7{
+    overflow: hidden;
+    margin: 5rem 0rem;
+    font-family: Circular;
+}
+.section7 .sale .s-heading h2{
+    font-size: 1.75rem;
+}
+.section7 .sale .s-heading span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.section7 .sale .s-heading{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+}
+.section7 i{
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+
+.section7 .sale .item{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1rem;
+}
+.section7 .sale .box-content{
+    background: #f6f6f6;
+    padding: 2rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.section7 .sale .box-content span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.section7 .sale .box-content span{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+}
+.section7 .item{
+    cursor: pointer;
+}
+.section7 .item img{
+    transform: scale(0.8);
+    transition: .5s ease;
+}
+.section7 .item:hover  img{
+    transform: scale(0.9);
+}
+
+.section7 .sale .box-content2{
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+    font-weight: 300;
+    letter-spacing: .01875rem;
+    line-height: 1rem;
+    gap: 0.5rem;
+}
+.section7 .sale .box-content2 >span{
+    color: #6e6e6e;
+}
+
+.section7 .sale .box-content2 .star-icons span{
+    color: #6e6e6e;
+}
+
+.section7 .sale .box-content2 .price span:first-child{
+    color: #cc0058;
+}
+.section7 .sale .box-content2 .price span:last-child{
+    text-decoration: line-through;
+}
+.section7 .owl-theme .owl-dots{
+    display: none;
+}
+.section7 .owl-theme .owl-nav {
+    text-align: end;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: -100px;
+    right: 25px;
+    display: flex;
+    gap: 1rem;
+}
+.section7 .owl-carousel .owl-nav button.owl-prev{
+    font-size: 2.2rem;
+    font-family: initial;
+    color: #302f2f;
+}
+.section7 .owl-carousel .owl-nav button.owl-next{
+    font-size: 2.2rem;
+    font-family: initial;
+    color: #302f2f;
+}
+.section7 .owl-theme .owl-nav [class*="owl-"]:hover {
+    background-color:transparent;
+    color: black;
+}
+
+/* ------------//SECTION8 SALE----------------*/
