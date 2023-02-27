@@ -7,6 +7,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+html{
+scroll-behavior: smooth;
+}
 
 body {
     font-family: Circular;
@@ -628,3 +631,43 @@ img {
     overflow: hidden;
 }
 /*------------- //SECTION-TEN MORE WAYS TO SAVE----------- */
+
+
+/* back to top button */
+.top {
+    position: fixed;
+    z-index: 1000;
+    top: 90%;
+    right: 2%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+    height: 60px;
+    width: 60px;
+    background: #505050;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+ 
+  
+  .top i {
+    font-size: 0.9rem;
+    color: white;
+    font-family: FontAwesome;
+    font-style: normal;
+    width: 100%;
+    transition: .3s ease;
+  }
+  .top:hover{
+    background-color:#e90b5a;
+  }
+
+   .top.active {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  /* //back to top button */
