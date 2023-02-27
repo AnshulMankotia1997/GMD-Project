@@ -13,10 +13,9 @@ scroll-behavior: smooth;
 
 body {
     font-family: Circular;
-    line-height: 2;
+    line-height: 1.6;
     color: var(--color-white);
     background-color: var(--color-bg);
-    font-family: Circular;
 }
 
 :root {
@@ -38,14 +37,15 @@ body {
 
 @font-face {
     font-family: Circular;
-    src: url(/assets/Circular/CircularStd-Bold.otf),
-        url(/assets/Circular/CircularStd-Medium.otf),
-        url(/assets/Circular/CircularStd-Light.otf);
+    src: url(/Fonts/CircularStd-Bold.5c4514a8399ec0064b9b.otf),
+         url(/Fonts/CircularStd-Book.9048137056e4347dbbd5.otf),
+         url(/Fonts/CircularStd-Medium.9ffafeddf192e8c8a111.otf);
+
 }
 
 @font-face {
     font-family: Chronicle;
-    src: url(/assets/chronicle/Chronicle\ Display\ Black.otf),
+    src: url(/Fonts/ChronicleDeck-Roman.3fd0b10255f293e4dd6b.otf);
 }
 
 h1 {
@@ -88,19 +88,18 @@ a {
 }
 
 .gray-lg {
-    font-size: 0.875;
+    font-size: 0.875rem;
     color: var(--font-gray);
     line-height: 1.25rem;
     font-family: Circular;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .015625rem;
 }
 
 .bold-lg {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.6rem;
-    font-weight: 900;
-    font-family: Circular;
+    font-weight: 400;
 }
 
 .spacer {
@@ -145,6 +144,7 @@ img {
     font-size: 14px;
     color: var(--font-gray);
     cursor: pointer;
+    width: max-content;
 }
 
 .link::before {
@@ -261,6 +261,9 @@ img {
 .offers-contai.link {
     width: 100%;
 }
+.offer-title p{
+    font-family: Chronicle;
+}
 .header-text {
     padding: 1rem 2rem;
 }
@@ -337,7 +340,6 @@ img {
 .section-three .content span {
     font-size: .75rem;
     line-height: 1.2rem;
-    color: var(--font-black);
     font-weight: bold;
     letter-spacing: .0625rem;
     text-transform: uppercase;
@@ -597,7 +599,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
 
 .section-ten .heading-container h2{
@@ -617,6 +618,7 @@ img {
 
 .section-ten .flex-row .column{
     background-color: var(--color-bg-ltgray);
+    flex-grow: 1
 }
 
 .section-ten .content-container{
@@ -629,6 +631,10 @@ img {
 
 .section-ten .content{
     overflow: hidden;
+}
+.section-ten .content span{
+    display: inline-block;
+    margin-top: 1rem;
 }
 /*------------- //SECTION-TEN MORE WAYS TO SAVE----------- */
 
