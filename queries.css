@@ -134,6 +134,11 @@
 
 }
 
+.offer-link .link {
+    width: 100%;
+    max-width: max-content;
+}
+
    .article-container {
     display: grid;
     align-items: center;
@@ -188,10 +193,10 @@
 }
 
 .offer--link .link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #section-five .owl-carousel .owl-nav {

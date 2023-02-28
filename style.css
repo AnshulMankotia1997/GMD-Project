@@ -150,6 +150,7 @@ img {
     color: var(--font-gray);
     cursor: pointer;
     width: max-content;
+    display: inline-block;
 }
 
 .link::before {
@@ -333,9 +334,7 @@ img {
     transform: scale(1.1);
 }
 
-.offer-link .link {
-    width: 100%;
-}
+
 
 /* ----------//SECTION2-OFFER------------- */
 
@@ -656,6 +655,51 @@ img {
 }
 
 /* ------------//SECTION8 SALE----------------*/
+
+
+
+/* ------------SECTION9 SALE----------------*/
+/* same as section three but here are some changes some changes  */
+.section-three .buttons{
+    display: flex;
+   gap: 2rem;
+   align-items: center;
+}
+
+.section-three .buttons button{
+   font-family: Circular,sans-serif;
+   font-size: .75rem;
+   font-weight: 500;
+   letter-spacing: .069375rem;
+   line-height: 1.125;
+   color: white;
+   padding: 0.8rem 1.5rem;
+   text-transform: uppercase;
+   position: relative;
+   z-index: 1;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.section-three  .buttons button::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+   background-color: black;
+   left: 0;
+   min-width: 4.5rem;
+   top: 0;
+   z-index: -1;
+   transform:scale(1);
+   transition: transform .2s linear;
+}
+.buttons button:hover::before{
+   transform:scale(1.1);
+}
+
+/* ------------//SECTION9 SALE----------------*/
 
 
 
