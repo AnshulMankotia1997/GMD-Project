@@ -39,10 +39,18 @@ body {
 
 @font-face {
     font-family: Circular;
-    src: url(/Fonts/CircularStd-Bold.5c4514a8399ec0064b9b.otf),
-        url(/Fonts/CircularStd-Book.9048137056e4347dbbd5.otf),
-        url(/Fonts/CircularStd-Medium.9ffafeddf192e8c8a111.otf);
+    src: url(/Fonts/CircularStd-Bold.5c4514a8399ec0064b9b.otf);
+        
+}
 
+@font-face {
+    font-family: Circular-std;
+    src: url(/Fonts/CircularStd-Book.9048137056e4347dbbd5.otf);
+}
+
+@font-face {
+    font-family: Circular-medium;
+    src: url(/Fonts/CircularStd-Medium.9ffafeddf192e8c8a111.otf);
 }
 
 @font-face {
@@ -63,6 +71,11 @@ h2 {
 h3 {
     font-size: 2rem;
 
+}
+
+i{
+    font-family: FontAwesome;
+    font-style: normal;
 }
 
 a {
@@ -221,6 +234,199 @@ img {
 /*------ //Arrow-right */
 
 
+/* ----------------HEADER-------------------- */
+.hide{
+    display: none;
+}
+
+.header-container{
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    
+}
+
+.header-container .flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.header-container .flex-column .column:nth-child(1){
+    margin:0rem 0rem 0.5rem 0rem;
+}
+
+.header-container .headerTop-heading{
+    text-align: center;
+    padding: 8px 10px;
+}
+
+.header-container .headerTop-heading span{
+    color: var(--font-pink);
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    display: inline-block;
+    background-color: var(--color-bg-secondary);
+    padding: 0 4px;
+    margin: 5px 0;
+    font-family: Circular-std;
+    font-size: 1rem;
+}
+
+.header-container .column:nth-of-type(2){
+    padding: 0 6rem;
+    height: 3.75rem;
+}
+
+.header-container .flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-container .hamburger svg{ 
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: #303030;
+
+}
+
+.header-container .hamburger{
+    position: relative;
+}
+
+.header-container .hamburger::after{
+    position: absolute;
+    top: -4px;
+    right: -51%;
+    content: "";
+    height: 40px;
+   border-right: 1px solid #999b9e;
+}
+
+.header-container .search-container input{
+    width: 280px;
+    height: 30px;
+    background: #f5f5f5;
+    padding-left: 1.875rem;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    line-height: 1.5px;
+    margin: 3px;
+    
+
+}
+
+.header-container .search-container{
+    position: relative;
+    margin-left: 1rem;
+}
+
+.header-container .search-container::after{
+    content: "\f002";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    font-size: 1rem; 
+    display: inline-block;
+    z-index: 1;
+    color: #999b9e;;
+}
+
+.header-container .search-container input:focus{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6)!important;
+}
+
+.header-container nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.header-container nav ul li{
+    /* border-right: 1px solid #999b9e; */
+    position: relative;
+    cursor: pointer;
+
+}
+
+.header-container nav ul li::after{
+    position: absolute;
+    top: 2px;
+    padding: 0 0.2rem;
+    content: "";
+    height: 15px;
+   border-right: 1px solid #999b9e;
+
+}
+
+.header-container nav ul li:last-child::after{
+    display: none;
+}
+
+.header-container nav li .down-angle{
+    color: #636466;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: -15px;
+}
+
+.header-container nav a {
+    color: var(--font-black);
+    font-family: Circular-std;
+    font-size: 0.75rem;
+}
+
+.header-container nav a:hover{
+    color: #636466;
+}
+
+.header-container .cart svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.header-container .stores svg{
+    width: 24px;
+    height: 24px;
+}
+
+.header-container .column2{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* ---------------CENTER-HEADER-------------- */
+/* .header-container .flex-row > div:nth-child(n){
+    flex: 1;
+}
+
+.header-container .column3 .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt{
+    margin-top: 0.5rem;
+} */
+/* ---------------CENTER-HEADER-------------- */
+
+/* ----------------//HEADER-------------------- */
+
+
 /* ---------SECTION1-MESSAGE-BAR--------- */
 
 .section-message-caorousel {
@@ -228,6 +434,7 @@ img {
 }
 
 .message-bar {
+    margin-top: 6.4rem;
     background: var(--color-bg-primry);
 }
 

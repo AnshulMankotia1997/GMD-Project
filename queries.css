@@ -3,9 +3,21 @@
         gap: 3rem;
        padding: 3.5rem 3rem;
 }
-    
 }
 
+
+@media screen and (max-width:1197px){
+    .header-container .search-container input {
+        width: 200px;
+        height: 30px;
+        background: #f5f5f5;
+        padding-left: 1.875rem;
+        border-radius: 40px;
+        font-size: 0.75rem;
+        line-height: 1.5px;
+        margin: 3px;
+    }
+} 
 
 
 
@@ -114,6 +126,59 @@
 
 }
 
+@media screen and (max-width:1145px) {
+    .header-container .search-container input{
+        width: 110px;
+    }
+
+}
+
+@media screen and (max-width:972px) {
+    .header-container .search-container input{
+        display: none;
+    }
+
+    .header-container .search-container::after {
+        left: -20px;
+        top: -12px;
+        font-size: 1.5rem;
+    }
+    .header-container .hamburger::after {
+       display: none;
+    }
+    .header-container .logo-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .header-container .logo-container >div:nth-child(n){
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .header-container .logo-container >div:nth-child(3){
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .header-container .logo-container >div:nth-child(2){
+        grid-column: 4;
+    }
+    .header-container .column:nth-of-type(2) {
+        padding: 0 2rem 0rem 0rem;
+        height: 3.75rem;
+    }
+
+}
+
+
+@media screen and (max-width:972px) {
+    .nav-links{
+        display: none;
+    }
+}
+
+
+
 @media screen and (max-width:767px) {
  
    h1{
@@ -208,6 +273,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap:2rem;
 }
+.header-container .headerTop-heading {
+    background-color: #e90b5a;
+}
+.header-container .headerTop-heading span {
+    background-color:transparent;
+    color: white;
+}
+
+
+
 }
 @media screen and (max-width:550px){
     .header-text {
@@ -218,5 +293,14 @@
         align-items: center;
         grid-template-columns:1fr;
         gap:2rem;
+    }
+    .header-container .column2 {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .header-container .column:nth-of-type(2) {
+        padding: 0 2rem 0rem 2rem;
+        height: 3.75rem;
     }
 }
