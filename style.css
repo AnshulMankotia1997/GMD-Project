@@ -975,6 +975,186 @@ img {
 /*------------- //SECTION-TEN MORE WAYS TO SAVE----------- */
 
 
+/* --------FOOTER */
+footer{
+    font-family: sans-serif;
+    margin-top: var(--spacer);
+    background-color: #f5f5f5;
+}
+.footer-container{
+max-width: 1170px;
+padding: 2rem 0;
+margin-inline: auto;
+}
+.footer-container .flex-row{
+    
+   max-width:61.563rem;
+   margin-inline: auto;
+}
+.footer-container .flex-row .grow{
+    flex-grow: 1;
+}
+.footer-container h5{
+    margin-bottom: 0.3rem;
+    font-size: 0.96rem;
+}
+.footer-container .grow a{
+    font-size: 0.9rem;
+    color:#434343;
+    font-weight: 100;
+    line-height: 1.3rem;
+}
+.footer-container img{
+    width: 4rem;
+    aspect-ratio: 1/1;
+}
+.footer-container ul{
+    flex-grow: 1;
+}
+.footer-container .footer_5 .flex-row{
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+}
+.footer-container .smallest{
+    font-size: 10px !important;
+    line-height: 0.85rem !important;
+}
+.justify-center{
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+}
+.cite{
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+.cite span{
+font-size:.825rem;
+}
+.cite .bar{
+    border-right: 2px solid rgb(100, 100, 100);
+    margin:0.4rem;
+}
+.cite .row_3{
+    margin-top: 0.2rem;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--font-gray);
+}
+.cite .row_1:hover{
+    scale: 1.02;
+}
+.cite .row_2:hover{
+    scale: 1.02;
+}
+
+/* --------Tab-Design */
+.tab-footer{
+    margin-top: var(--spacer);
+    width:100%;
+    font-family: sans-serif;
+}
+.tab-footer-container{
+    max-width:36.25rem ;
+    margin: 0 auto;
+}
+.rewards-text-container{
+    width: 100%;
+}
+.rewards-text-container .flex-row{
+    width: 100%;
+    justify-content: space-between;
+}
+.underline{
+   border-bottom: 1px solid black;
+   margin-top: 1rem;
+   font-size: 0.9rem;
+   color: var(--font-gray);
+}
+.font-size{
+    font-size: 0.9rem;
+}
+.font-light{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+   color: var(--font-gray);
+}
+.font-weight{
+    font-weight: 700;
+}
+.label_1{
+    gap: 1rem;
+    padding:1rem 1.8rem;
+    background-color: #f5f5f5;
+    margin-bottom: 2px;
+}
+.tab-footer-container img{
+    width:6.25rem;
+}
+.ourApp-text-container{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.tab-footer-container>div{
+    width: 100%;
+}
+.label{
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   height: 3.5rem;
+   padding: 0 1.8rem;
+    margin-bottom: 2px;
+}
+.label .flex-row{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* ------//Tab-Design */
+
+
+/* ------------social-icons */
+.sociol-icons{
+    padding:2rem 0 1rem 0;
+    width: 100%;
+}
+.social-icon-container{
+    width:17rem;
+    margin-inline: auto;
+}
+.social-icon-container .icons{
+    justify-content: space-between;
+    gap: 1rem;
+}
+.social-icon-container i{
+    font-size: 2rem;
+}
+.tab-footer .justify{
+    padding: 2rem 1rem;
+    line-height: 2rem;
+    justify-content:space-between;
+    gap: 2rem;
+}
+.tab-footer .justify h5{
+    font-size: 1rem;
+}
+.display-block{
+    display: block;
+}
+.display-none{
+    display: none;
+}
+/* ----------//social-icons */
+/* ------//FOOTER */
+
+
 /* back to top button */
 .top {
     position: fixed;

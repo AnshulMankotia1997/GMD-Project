@@ -304,3 +304,20 @@
         height: 3.75rem;
     }
 }
+
+
+/* ---------FOOTER MEDIA QUERY */
+@media screen and (max-width:769px){
+    .display-block{
+        display: none;
+    }
+    .display-none{
+        display: block;
+    }
+}
+@media screen and (max-width:300px){
+    .tab-footer {
+        padding: 0 0.5rem;
+    }
+}
+/* ---------//FOOTER MEDIA QUERY ENDS */
