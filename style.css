@@ -647,7 +647,7 @@ img {
     text-align: end;
     -webkit-tap-highlight-color: transparent;
     position: absolute;
-    top: -20px;
+    top: -4px;
     left: 93%;
     display: flex;
     gap: 1rem;
