@@ -124,9 +124,8 @@
     display: block;
 }
 .section7 .sale .s-heading {
-    /* flex-direction: column; */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
  }
 
 }
@@ -177,6 +176,10 @@
     .message-bar {
         margin-top:0rem;
     }
+    .section7 .sale .s-heading {
+        justify-content: space-between;
+        align-items: flex-start;
+     }
 
 }
 
@@ -247,14 +250,6 @@
    gap: 1rem;
    align-items: flex-start;
 }
-
-
-.section7 .sale .s-heading {
-   /* flex-direction: column; */
-   justify-content: space-between;
-   align-items: center;
-}
-
 .section7 br{
     display: block;
 }

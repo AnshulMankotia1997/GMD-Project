@@ -763,6 +763,9 @@ img {
     margin: 5rem 0rem;
     font-family: Circular;
 }
+.section7 .container{
+    padding: 0rem 2rem;
+}
 
 .section7 .sale .s-heading h2 {
     font-size: 1.75rem;
@@ -862,7 +865,7 @@ img {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
     top: -100px;
-    right: 25px;
+    right: -7px;
     display: flex;
     gap: 1rem;
 }
