@@ -28,6 +28,7 @@ body {
     --color-bg-primry: #f6f6f6;
     --color-bg-secondary: #fdf1f3;
     --color-bg-ltgray: #fafafa;
+    --color-lightPink: #FFC9CB;
     --container-width-lg: 1400px;
     --container-width-md: 90%;
     --container-width-sm: 94%;
@@ -159,7 +160,7 @@ img {
     position: relative;
     overflow: hidden;
     padding-bottom: 0.2rem;
-    font-size: 14px;
+    font-size: 15px;
     color: var(--font-gray);
     cursor: pointer;
     width: max-content;
@@ -486,6 +487,10 @@ img {
     margin-bottom: var(--spacersm);
 }
 
+.offers h1{
+    letter-spacing: 1px;
+}
+
 .offers-container .link {
     width: 100%;
 }
@@ -493,6 +498,7 @@ img {
 .offer-title p {
     margin-top: 1rem;
     font-family: Chronicle;
+    letter-spacing: 1px;
 }
 
 .header-text {
@@ -529,13 +535,17 @@ img {
 }
 
 .offer-image-container img {
+    transform: scale(0.9);
     max-width: 11.875rem;
     min-width: 5rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     transition: all 0.2s ease;
     margin-bottom: 2rem;
+    background-color: var(--color-lightPink);
 }
+
+
 
 .offer-link:hover .offer-image-container img {
     transform: scale(1.1);
