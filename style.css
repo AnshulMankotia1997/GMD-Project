@@ -21,9 +21,9 @@ body {
 }
 
 :root {
-    --font-black: #000;
-    --font-gray: #505050;
-    --font-pink: #cc0058;
+    --font-black: #000000;
+    --font-gray: #565656;
+    --font-pink: #C52228;
     --color-bg: #fff;
     --color-bg-primry: #f6f6f6;
     --color-bg-secondary: #fdf1f3;
@@ -493,6 +493,7 @@ img {
 .offer-title p {
     margin-top: 1rem;
     font-family: Chronicle;
+    color: var(--font-gray);
 }
 
 .header-text {
@@ -814,20 +815,21 @@ img {
     gap: 0.5rem;
 }
 
-.section7 .sale .box-content2>span {
-    color: #6e6e6e;
+.section7 .sale .box-content2 span {
+    color:var(--font-black);
 }
 
-.section7 .sale .box-content2 .star-icons span {
-    color: #6e6e6e;
+.section7 .sale .box-content2>p{
+    color: var(--font-black);
 }
 
 .section7 .sale .box-content2 .price span:first-child {
-    color: #cc0058;
+    color: var(--font-pink);
 }
 
 .section7 .sale .box-content2 .price span:last-child {
     text-decoration: line-through;
+    color: var(--font-gray);
 }
 
 .section7 .owl-theme .owl-dots {
@@ -967,8 +969,8 @@ img {
 .top {
     position: fixed;
     z-index: 1000;
-    top: 90%;
-    right: 2%;
+    top: 92%;
+    right: 1%;
     opacity: 0;
     pointer-events: none;
     transition: all 0.4s;
@@ -993,7 +995,7 @@ img {
 }
 
 .top:hover {
-    background-color: #e90b5a;
+    background-color:var(--font-pink);
 }
 
 .top.active {
