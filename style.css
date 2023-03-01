@@ -402,11 +402,17 @@ img {
     width: 24px;
     height: 24px;
 }
+.header-container .logo img{
+    width: 100px;
+}
 
 .header-container .column2{
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+.mobile-container{
+    display: none;
 }
 
 /* ---------------CENTER-HEADER-------------- */
