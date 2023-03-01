@@ -322,12 +322,15 @@
 }
 
 /* ---------FOOTER MEDIA QUERY */
-@media screen and (max-width:769px){
+@media screen and (max-width:972px){
     .display-block{
         display: none;
     }
     .display-none{
         display: block;
+    }
+    .tab-footer-container > svg:first-child{
+        margin-bottom: -4px;
     }
 }
 @media screen and (max-width:300px){
